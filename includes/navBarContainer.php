@@ -19,7 +19,11 @@
 
 		<div class="group">
 			<div class="navItem">
-				<span role="link" tabindex="0" onclick="openPage('browse.php')" class="navItemLink">Browse</span>
+				<span role="link" tabindex="0" onclick="openPage('browse.php')" class="navItemLink">Albums</span>
+			</div>
+
+			<div class="navItem">
+				<span role="link" tabindex="0" onclick="openPage('browseGenre.php')" class="navItemLink">Genre</span>
 			</div>
 
 			<div class="navItem">

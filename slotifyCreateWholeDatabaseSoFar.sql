@@ -75,26 +75,44 @@ INSERT INTO `artists` (`id`, `name`) VALUES
 -- Table structure for table `genres`
 --
 
+-- CREATE TABLE IF NOT EXISTS `genres` (
+-- `id` int(11) NOT NULL,
+--   `name` varchar(50) NOT NULL
+-- ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+
+
 CREATE TABLE IF NOT EXISTS `genres` (
 `id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL
+  `name` varchar(50) NOT NULL,
+  `path` varchar(500)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
-
 --
 -- Dumping data for table `genres`
 --
 
-INSERT INTO `genres` (`id`, `name`) VALUES
-(1, 'Rock'),
-(2, 'Pop'),
-(3, 'Hip-hop'),
-(4, 'Rap'),
-(5, 'R & B'),
-(6, 'Classical'),
-(7, 'Techno'),
-(8, 'Jazz'),
-(9, 'Folk'),
-(10, 'Country');
+-- INSERT INTO `genres` (`id`, `name`) VALUES
+-- (1, 'Rock'),
+-- (2, 'Pop'),
+-- (3, 'Hip-hop'),
+-- (4, 'Rap'),
+-- (5, 'R & B'),
+-- (6, 'Classical'),
+-- (7, 'Techno'),
+-- (8, 'Jazz'),
+-- (9, 'Folk'),
+-- (10, 'Country');
+
+INSERT INTO `genres` (`id`, `name`, `path`) VALUES
+(1, 'Rock', 'assets/images/genre/rock.jpeg'),
+(2, 'Pop', 'assets/images/genre/pop.jpeg'),
+(3, 'Hip-hop', 'assets/images/genre/hiphop.jpeg'),
+(4, 'Rap', 'assets/images/genre/rap.jpeg'),
+(5, 'R & B', 'assets/images/genre/rb.jpeg'),
+(6, 'Classical', 'assets/images/genre/classical.jpeg'),
+(7, 'Techno', 'assets/images/genre/techno.jpeg'),
+(8, 'Jazz', 'assets/images/genre/jazz.jpg'),
+(9, 'Folk', 'assets/images/genre/folk.jpeg'),
+(10, 'Country', 'assets/images/genre/country.jpeg');
 
 -- --------------------------------------------------------
 

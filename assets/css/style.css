@@ -254,6 +254,36 @@ body {
     text-decoration: none;
 }
 
+
+
+/*.genregridViewItem {
+    display: inline-block;
+    margin-right: 20px;
+    width: 29%;
+    max-width: 200px;
+    min-width: 150px;
+    margin-bottom: 20px;
+}
+
+.genregridViewItem img {
+    width: 100%;
+}
+
+.genregridViewInfo {
+    font-weight: 300;
+    text-align: center;
+    padding: 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.genregridViewItem a {
+    text-decoration: none;
+}*/
+
+
+
 .entityInfo {
     padding: 40px 0 10px 0;
     display: inline-block;

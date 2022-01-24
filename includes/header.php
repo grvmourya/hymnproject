@@ -5,6 +5,7 @@ include("includes/classes/Artist.php");
 include("includes/classes/Album.php");
 include("includes/classes/Song.php");
 include("includes/classes/Playlist.php");
+include("includes/classes/Genre.php");
 
 //session_destroy(); LOGOUT
 
