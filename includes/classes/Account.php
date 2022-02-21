@@ -54,7 +54,14 @@
 			$profilePic = "assets/images/profile-pics/head_emerald.png";
 			$date = date("Y-m-d");
 			//echo "INSERT INTO users VALUES ('', '$un', '$fn', '$ln', '$em', '$encryptedPw', '$date', '$profilePic')";
-			$result = mysqli_query($this->con, "INSERT INTO users VALUES (NULL, '$un', '$fn', '$ln', '$em', '$encryptedPw', '$date', '$profilePic')");
+
+
+			$userid = mysqli_query($this->con, "SELECT MAX(id) as userID FROM users");
+			$row = mysqli_fetch_array($userid);
+			$newID = $row['userID'] + 1;
+
+
+			$result = mysqli_query($this->con, "INSERT INTO users VALUES ('$newID', '$un', '$fn', '$ln', '$em', '$encryptedPw', '$date', '$profilePic')");
 
 			return $result;
 		}

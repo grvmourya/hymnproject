@@ -17,7 +17,7 @@
 
 <html>
 <head>
-	<title>Welcome to Slotify!</title>
+	<title>Welcome to HyMN!</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
 
@@ -61,7 +61,7 @@
 					</p>
 					<p>
 						<label for="loginPassword">Password</label>
-						<input id="loginPassword" name="loginPassword" type="password" placeholder="Your password" required>
+						<input id="loginPassword" name="loginPassword" type="password" placeholder="Your password" required autocomplete="off">
 					</p>
 
 					<button type="submit" name="loginButton">LOG IN</button>
@@ -80,19 +80,19 @@
 						<?php echo $account->getError(Constants::$usernameCharacters); ?>
 						<?php echo $account->getError(Constants::$usernameTaken); ?>
 						<label for="username">Username</label>
-						<input id="username" name="username" type="text" placeholder="e.g. bartSimpson" value="<?php getInputValue('username') ?>" required>
+						<input id="username" name="username" type="text" placeholder="e.g. bartSimpson" value="<?php getInputValue('username') ?>" required autocomplete="off">
 					</p>
 
 					<p>
 						<?php echo $account->getError(Constants::$firstNameCharacters); ?>
 						<label for="firstName">First name</label>
-						<input id="firstName" name="firstName" type="text" placeholder="e.g. Bart" value="<?php getInputValue('firstName') ?>" required>
+						<input id="firstName" name="firstName" type="text" placeholder="e.g. Bart" value="<?php getInputValue('firstName') ?>" required autocomplete="off">
 					</p>
 
 					<p>
 						<?php echo $account->getError(Constants::$lastNameCharacters); ?>
 						<label for="lastName">Last name</label>
-						<input id="lastName" name="lastName" type="text" placeholder="e.g. Simpson" value="<?php getInputValue('lastName') ?>" required>
+						<input id="lastName" name="lastName" type="text" placeholder="e.g. Simpson" value="<?php getInputValue('lastName') ?>" required autocomplete="off">
 					</p>
 
 					<p>
@@ -100,12 +100,12 @@
 						<?php echo $account->getError(Constants::$emailInvalid); ?>
 						<?php echo $account->getError(Constants::$emailTaken); ?>
 						<label for="email">Email</label>
-						<input id="email" name="email" type="email" placeholder="e.g. bart@gmail.com" value="<?php getInputValue('email') ?>" required>
+						<input id="email" name="email" type="email" placeholder="e.g. bart@gmail.com" value="<?php getInputValue('email') ?>" required autocomplete="off">
 					</p>
 
 					<p>
 						<label for="email2">Confirm email</label>
-						<input id="email2" name="email2" type="email" placeholder="e.g. bart@gmail.com" value="<?php getInputValue('email2') ?>" required>
+						<input id="email2" name="email2" type="email" placeholder="e.g. bart@gmail.com" value="<?php getInputValue('email2') ?>" required autocomplete="off">
 					</p>
 
 					<p>
@@ -113,12 +113,12 @@
 						<?php echo $account->getError(Constants::$passwordNotAlphanumeric); ?>
 						<?php echo $account->getError(Constants::$passwordCharacters); ?>
 						<label for="password">Password</label>
-						<input id="password" name="password" type="password" placeholder="Your password" required>
+						<input id="password" name="password" type="password" placeholder="Your password" required autocomplete="off">
 					</p>
 
 					<p>
 						<label for="password2">Confirm password</label>
-						<input id="password2" name="password2" type="password" placeholder="Your password" required>
+						<input id="password2" name="password2" type="password" placeholder="Your password" required autocomplete="off">
 					</p>
 
 					<button type="submit" name="registerButton">SIGN UP</button>
@@ -133,6 +133,7 @@
 			</div>
 
 			<div id="loginText">
+				
 				<h1>Get great music, right now</h1>
 				<h2>Listen to loads of songs for free</h2>
 				<ul>

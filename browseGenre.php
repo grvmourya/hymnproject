@@ -2,7 +2,7 @@
 include("includes/includedFiles.php"); 
 ?>
 
-<h1 class="pageHeadingBig">You Might Also Like</h1>
+<h1 class="pageHeadingBig">GENRE</h1>
 
 <div class="gridViewContainer">
 

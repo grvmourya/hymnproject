@@ -2,12 +2,12 @@
 include("includes/includedFiles.php"); 
 ?>
 
-<h1 class="pageHeadingBig">You Might Also Like</h1>
+<h1 class="pageHeadingBig">ALBUMS</h1>
 
 <div class="gridViewContainer">
 
 	<?php
-		$albumQuery = mysqli_query($con, "SELECT * FROM albums ORDER BY RAND() LIMIT 10");
+		$albumQuery = mysqli_query($con, "SELECT * FROM albums ORDER BY RAND() LIMIT 20");
 
 		while($row = mysqli_fetch_array($albumQuery)) {
 			

@@ -22,7 +22,7 @@ else {
 
 <html>
 <head>
-	<title>Welcome to Slotify!</title>
+	<title>Welcome to HyMN!</title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
